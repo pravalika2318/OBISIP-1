@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(13, 27, 53);
+            margin: 0;
+            font-family: 'Arial Narrow Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3NxaGk4Y2Vsd2dwbWNuYTB0aGE2dHJnYXZuNnE4ejBvcjI5MXl2YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOhqA8rf4IwuDoM0QI/giphy.gif");
+            /* Replace with your GIF URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgb(6, 5, 20);
+            padding: 40px 0 10px 0;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .centered {
+            margin-bottom: 20px;
+        }
+
+
+
+        .profile-img {
+            background-color: #030730;
+            border-radius: 15px;
+            padding: 15px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .profile-img img {
+            width: 120px;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #fff;
+        }
+
+        .main-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            border: 2px solid silver;
+            /* Silver border */
+            border-radius: 20px;
+            padding: 25px;
+            color: white;
+            text-align: left;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            min-height: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Different shades of blue for each card */
+        .card1 {
+            background-color: #04142c;
+        }
+
+        .card2 {
+            background-color: #041529;
+        }
+
+        .card3 {
+            background-color: #07192b;
+        }
+
+        .card4 {
+            background-color: #031627;
+        }
+
+        .card5 {
+            background-color: #031524;
+        }
+
+        .card6 {
+            background-color: #040622;
+            /* Deep blue shade */
+
+        }
+
+        .card7 {
+            background-color: #040622
+        }
+
+
+
+        /* Card hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+
+            /* Hover effect */
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            }
+
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            }
+
+            .main-section .card {
+                margin: 0;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: aliceblue;
+            }
+
+            h1 {
+                text-align: center;
+                text-shadow: 1px 1px 2px black, 0 0 25px rgb(5, 19, 56), 0 0 5px rgb(4, 4, 39);
+            }
+
+            ul {
+                color: aliceblue;
+            }
+
+            a {
+                color: #a3bffa;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            <script>function scrollToSection(id) {
+                const section=document.getElementById(id);
+
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+            }
+        }
+
+        </script>
+    </style>
+</head>
+<script>
+    function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+
+<body>
+
+    <div class="button-group">
+        <button class="about-btn" onclick="scrollToSection('about')">About Me</button>
+        <button class="about-btn" onclick="scrollToSection('skills')">Skills</button>
+        <button class="about-btn" onclick="scrollToSection('projects')">Projects</button>
+        <button class="about-btn" onclick="scrollToSection('education')">Education</button>
+        <button class="about-btn" onclick="scrollToSection('hobbies')">Courses</button>
+        <button class="about-btn" onclick="scrollToSection('certifications')">certifications</button>
+        <button class="about-btn" onclick="scrollToSection('experience')">Experience</button>
+    </div>
+
+
+    <style>
+        .button-group {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            z-index: 10;
+            /* Ensures it's above other elements */
+        }
+
+        .about-btn {
+            background-color: #387cc9;
+            color: #fff;
+            border: none;
+            text-align: left;
+            border-radius: 12px;
+            padding: 12px 32px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(16, 17, 82, 0.2);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .about-btn:hover {
+            background-color: #3556a3;
+            transform: translateY(-2px) scale(1.04);
+        }
+    </style>
+
+    <head>
+        < <div class="container">
+            <div class="centered">
+                <div class="card" style="text-align:center;">
+                    <h1>ALETI PRAVALIKA</h1>
+                    <p>Data Analyst</p>
+                    <p>Welcome to my portfolio page</p>
+                </div>
+            </div>
+    </head>
+    <p style="color: aliceblue"><em>This is a portfolio page to showcase my capabilities and skills.</em></p>
+    </div>
+
+    <h1 id="about" style="color:aliceblue">ABOUT ME</h1>
+    <div class="main-section">
+
+        <div class="card card1">
+            <h3>Name</h3>
+            <p>ALETI PRAVALIKA</p>
+            <h3>Email</h3>
+            <p><a href="mailto:sanjay@gmail.com">pravalika@gmail.com</a></p>
+            <h3>Phone</h3>
+            <p>+91 1234567890</p>
+            <h3>Address</h3>
+            <p>India</p>
+        </div>
+        <div class="card card2" id="skills">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="card card3" id="education">
+            <h3>Education</h3>
+            <p>Bachelor of Technology in Data Science</p>
+            <p>TKR COLLEGE OF ENGINEERING AND TECHNOLOGY</p>
+            <p>Graduates in 2027</p>
+        </div>
+        <div class="card card4" id="projects">
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>Exploring and analysing data</li>
+                <li>Data cleaning and preprocessing</li>
+                <li>Analysing trend in YouTube</li>
+            </ul>
+        </div>
+        <div class="card card5" id="hobbies">
+            <h2>HOBBIES</h2>
+            <ul>
+                <li>Listening to music</li>
+                <li>Reading books</li>
+                <li>Travelling</li>
+                <li>Playing cricket</li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="card card6" id="certifications">
+        <h3>Certifications & Courses</h3>
+        <ul>
+            <li><strong><a href="c:\Users\prava\Downloads\develop-genai-apps-with-gemini-and-streamlit-skill-.png"
+                        target="_blank" style="color: #a3bffa; text-decoration: underline;">Google cloud license
+                        develop-genai-apps-with-gemini-and-streamlit-skill</a></li>
+            <li><strong><a href="c:\Users\prava\Downloads\prompt-design-in-vertex-ai-skill-badge (1).png"
+                        target="_blank" style="color: #a3bffa; text-decoration: underline;">Google cloud license
+                        prompt-design-in-vertex-ai-skill</a></li>
+            <li><strong><a href="c:\Users\prava\Downloads\build-real-world-ai-applications-with-gemini-and-im.png"
+                        target="_blank" style="color: #a3bffa; text-decoration: underline;">Google cloud license
+                        build-real-world-ai-applications-with-gemini-and-img </a></li>
+        </ul>
+    </div>
+
+    <div class="card card7" id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Internship at elevate labs - Data Analyst Intern (June - 2025)</li>
+            <li>Internship at unified mentor -data analyst intern (2025-may)</li>
+            <li>Simulation at delloitte Australia's -data analyst(june-2025)</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        function showCard(id) {
+            const card = document.getElementById(id);
+            if (card) {
+                card.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
