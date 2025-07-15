@@ -65,14 +65,15 @@
             padding: 25px;
             color: white;
             text-align: left;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 50px 60px rgba(1, 9, 80, 0.979);
             min-height: 250px;
+            max-width: 2000px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         /* Different shades of blue for each card */
         .card1 {
-            background-color: #04142c;
+            background-color: #040b16;
         }
 
         .card2 {
@@ -80,15 +81,15 @@
         }
 
         .card3 {
-            background-color: #07192b;
+            background-color: #040622;
         }
 
         .card4 {
-            background-color: #031627;
+            background-color: #040622;
         }
 
         .card5 {
-            background-color: #031524;
+            background-color: #040622;
         }
 
         .card6 {
@@ -100,6 +101,12 @@
         .card7 {
             background-color: #040622
         }
+
+        .card8 {
+            background-color: #040622;
+            /* Deep blue shade */
+        }
+
 
 
 
@@ -228,12 +235,13 @@
     <p style="color: aliceblue"><em>This is a portfolio page to showcase my capabilities and skills.</em></p>
     </div>
 
-    <h1 id="about" style="color:aliceblue">ABOUT ME</h1>
+    <h1 id="about" style="color: aliceblue; text-align: center;">ABOUT ME</h1>
+
     <div class="main-section">
 
         <div class="card card1">
             <h3>Name</h3>
-            <p>ALETI PRAVALIKA</p>
+            <p>ALETI PRAVALIKA</p>gn
             <h3>Email</h3>
             <p><a href="mailto:sanjay@gmail.com">pravalika@gmail.com</a></p>
             <h3>Phone</h3>
@@ -274,11 +282,26 @@
 
             </ul>
         </div>
+        <div class="card card6">
+            <h2>Tools Used</h2>
+            <ul>
+                <li>Google Colab</li>
+                <li>Jupyter Notebook</li>
+                <li>Tableau</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+                <li>Python</li>
+                <li>mysql</li>
+                <li>GitHub</li>
+                <li>Google Cloud</li>
+                <li>VScode</li>
+            </ul>
+        </div>
     </div>
 
 
 
-    <div class="card card6" id="certifications">
+    <div class="card card7" id="certifications">
         <h3>Certifications & Courses</h3>
         <ul>
             <li><strong><a href="c:\Users\prava\Downloads\develop-genai-apps-with-gemini-and-streamlit-skill-.png"
@@ -293,7 +316,7 @@
         </ul>
     </div>
 
-    <div class="card card7" id="experience">
+    <div class="card card8" id="experience">
         <h2>Experience</h2>
         <ul>
             <li>Internship at elevate labs - Data Analyst Intern (June - 2025)</li>
